@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/normalize.css">
 
-	<title>Seed-TTS</title>
+	<title>Demo</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 </head>
@@ -26,20 +26,12 @@
 
 <div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">
 	<div class="text-center">
-	<h2>Seed-TTS: </h2>
-      <h3>A Family of High-Quality Versatile Speech Generation Models</h3>
-      [<a href="https://arxiv.org/abs/2406.02430">Paper</a>]
-		<!-- [<a href="https://arxiv.org/abs/2303.03926">Paper</a>] -->
-		<!-- [<a href="https://arxiv.org/abs/2306.02982">Paper</a>] -->
-
-        <p class="fst-italic mb-0">
-        	<br>
-          Seed Team
-      <p></p>
-        </p>
-        <p><b>ByteDance</b></p>
+	<h2>DEMO: </h2>
+      <h3>Paper Title</h3>
+      <!-- [<a href="">Paper Link</a>] -->
+        <p><b>Author here.</b></p>
 	</div>
-	<p><b>Abstract.</b> We introduce Seed-TTS, a family of large-scale autoregressive text-to-speech (TTS) models capable of generating speech that is virtually indistinguishable from human speech. Seed-TTS serves as a foundation model for speech generation and excels in speech in-context learning, achieving performance in speaker similarity and naturalness that matches ground truth human speech in both objective and subjective evaluations. With fine-tuning, we achieve even higher subjective scores across these metrics. Seed-TTS offers superior controllability over various speech attributes such as emotion and is capable of generating highly expressive and diverse speech for speakers in the wild. Furthermore, we propose a self-distillation method for speech factorization, as well as a reinforcement learning approach to enhance model robustness, speaker similarity and controllability. We additionally present a non-autoregressive (NAR) variant of the Seed-TTS model, named Seed-TTS<sub>DiT</sub>, which utilizes a fully diffusion-based architecture. Unlike previous NAR-based TTS systems, Seed-TTS<sub>DiT</sub> does not depend on pre-estimated phoneme durations and performs speech generation through end-to-end processing. We demonstrate that this variant achieves comparable performance to the language model-based variant in both objective and subjective evaluations and showcase its effectiveness in speech editing.
+	<p><b>Abstract.</b>  add abstract here.
 	</p>
 
 	<p>
@@ -67,8 +59,7 @@
 	</p>
 	</body>
 		<p style="text-align: center;" >
-			<b>Figure 1.</b> An overview of the Seed-TTS inference pipeline. (1) The speech tokenizer learns tokens from reference speech. (2) The autoregressive language model generates the speech tokens based on the condition text and speech. (3) The diffusion transformer model generates continuous speech representations given generated speech tokens in a coarse-to-fine manner. (4) The acoustic vocoder yields higher-quality speech from the diffusion output.
-		</p>
+			<b>Figure 1.</b> 图片描述
 </div>
 
 
@@ -512,73 +503,6 @@
 			</table>
 		</div>
 	<br>
-	<h4 id="cla-samples" style="text-align: center;">Cross-lingual Content Creation</h4>
-	<br>
-		<div class="table-responsive pt-3">
-			<table class="table table-hover pt-2">
-				<thead>
-				<tr>
-				<th style="text-align: center"> </th>
-				<th style="text-align: center">Source Video</th>
-				<th style="text-align: center">Generated Video</th>
-				</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td style="vertical-align : middle;text-align:center;">ZH2EN</td>
-						<td style="vertical-align : middle;text-align:center;">
-							<video width="250" height="400" controls>
-								<source src="audios/CLA_samples/zh2en_showcase.mp4" type="video/mp4">
-							</video>
-						</td>
-						<td style="vertical-align : middle;text-align:center;">
-							<video width="250" height="400" controls>
-								<source src="audios/CLA_samples/zh2en_showcase_res.mp4" type="video/mp4">
-							</video>
-						</td>
-					</tr>
-					<tr>
-						<td style="vertical-align : middle;text-align:center;">PT2EN</td>
-						<td style="vertical-align : middle;text-align:center;">
-							<video width="250" height="400" controls>
-								<source src="audios/CLA_samples/test_pt2en.mp4" type="video/mp4">
-							</video>
-						</td>
-						<td style="vertical-align : middle;text-align:center;">
-							<video width="250" height="400" controls>
-								<source src="audios/CLA_samples/test_pt2en_res_24k.mp4" type="video/mp4">
-							</video>
-						</td>
-					</tr>
-					<tr>
-						<td style="vertical-align : middle;text-align:center;">ZH2EN<br>(With Mouth Editing)</td>
-						<td style="vertical-align : middle;text-align:center;">
-							<video width="250" height="400" controls>
-								<source src="audios/CLA_samples/test_speaking_24k.mp4" type="video/mp4">
-							</video>
-						</td>
-						<td style="vertical-align : middle;text-align:center;">
-							<video width="250" height="400" controls>
-								<source src="audios/CLA_samples/test_speaking_res_24k.mp4" type="video/mp4">
-							</video>
-						</td>
-					</tr>
-					<tr>
-						<td style="vertical-align : middle;text-align:center;">EN2ES<br>(With Mouth Editing)</td>
-						<td style="vertical-align : middle;text-align:center;">
-							<video width="256" height="454" controls>
-								<source src="audios/CLA_samples/en2es_showcase_24k.mp4" type="video/mp4">
-							</video>
-						</td>
-						<td style="vertical-align : middle;text-align:center;">
-							<video width="256" height="454" controls>
-								<source src="audios/CLA_samples/en2es_test.mp4" type="video/mp4">
-							</video>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
 
 </div>
 
